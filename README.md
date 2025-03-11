@@ -1,4 +1,4 @@
-[Bank_Churn.csv](https://github.com/user-attachments/files/19187733/Bank_Churn.csv)# 📊 Bank Customer Churn Analysis – Turning Data into Retention Strategies  
+# 📊 Bank Customer Churn Analysis – Turning Data into Retention Strategies  
 
 ## 🎯 Project Objective  
 In the banking industry, **losing customers means losing revenue, trust, and long-term value**. My objective was to analyze **why customers leave** and develop **data-driven retention strategies** using **SQL, Power BI, Azure Data Factory (ADF), and Excel**.  
@@ -88,8 +88,9 @@ Based on the insights, I developed **three key strategies** to reduce churn:
 ---
 
 ## 🔗 Related Resources  
-📂 **Full Dataset (Excel):** [Uploading Bank_Churn.csv…]
-📊 **Power BI Dashboard:** [(https://drive.google.com/drive/u/0/folders/1XpTUBOuNozQQK1k6HW3R71Yd5CJ9G99y) ]
+📂 **Full Dataset (Excel):** [[Bank_Churn.csv.zip](https://github.com/user-attachments/files/19188174/Bank_Churn.csv.zip)]
+
+📊 **Power BI Dashboard:** [(https://drive.google.com/drive/u/0/folders/1XpTUBOuNozQQK1k6HW3R71Yd5CJ9G99y)]
 
 
 
