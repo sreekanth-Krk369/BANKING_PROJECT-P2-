@@ -1,4 +1,4 @@
-# 📊 Bank Customer Churn Analysis – Turning Data into Retention Strategies  
+[Bank_Churn.csv](https://github.com/user-attachments/files/19187733/Bank_Churn.csv)# 📊 Bank Customer Churn Analysis – Turning Data into Retention Strategies  
 
 ## 🎯 Project Objective  
 In the banking industry, **losing customers means losing revenue, trust, and long-term value**. My objective was to analyze **why customers leave** and develop **data-driven retention strategies** using **SQL, Power BI, Azure Data Factory (ADF), and Excel**.  
@@ -51,18 +51,15 @@ Based on the insights, I developed **three key strategies** to reduce churn:
 - Suggested **zero-fee accounts for younger customers**, as they had the highest churn rates.  
 
 ---
-
 ## 📊 Power BI Dashboard Snapshots  
 
 ### **1️⃣ Customer Churn Overview**  
 📌 Visualizing churn trends by **tenure, activity level, and balance**.  
-![Customer Churn Overview](path_to_image1.png)  
+     ![bank report_page-0001](https://github.com/user-attachments/assets/48c8a274-fb58-471d-a9d8-88a3c9812000)
 
 ### **2️⃣ Churn Rate by Credit Score & Geography**  
 📌 Identifying high-risk segments based on **credit score and location**.  
-![Churn Rate by Geography](path_to_image2.png)  
-
-_(Replace "path_to_image1.png" and "path_to_image2.png" with actual file paths or URLs of your Power BI dashboard screenshots.)_  
+    ![bank report_page-0002](https://github.com/user-attachments/assets/c10deb84-dd3e-4ad0-b576-821c50640e13)
 
 ---
 
@@ -91,10 +88,12 @@ _(Replace "path_to_image1.png" and "path_to_image2.png" with actual file paths o
 ---
 
 ## 🔗 Related Resources  
-📂 **Full Dataset (Excel & SQL Queries):** [Link Here]  
-📊 **Power BI Dashboard:** [Link Here]  
-📖 **Project Documentation:** [Link Here]  
+📂 **Full Dataset (Excel):** [Uploading Bank_Churn.csv…]
+📊 **Power BI Dashboard:** [(https://drive.google.com/drive/u/0/folders/1XpTUBOuNozQQK1k6HW3R71Yd5CJ9G99y) ]
 
-📧 **For Queries:** Contact [Your Email]  
 
-🚀 **Let’s use data to improve customer retention and banking success!**  
+
+## 📩 Let’s connect!  
+📧 **Email:** [sreekanthkondeti333@gmail.com]  
+🔗 **LinkedIn:** [(https://www.linkedin.com/in/sreekanth-k-3693ksk/) ] 
+
