@@ -98,3 +98,83 @@ Based on the insights, I developed **three key strategies** to reduce churn:
 📧 **Email:** [sreekanthkondeti333@gmail.com]  
 🔗 **LinkedIn:** [(https://www.linkedin.com/in/sreekanth-k-3693ksk/) ] 
 
+---
+
+## 📂 Bank Customer Churn Analysis - Simplified SQL Query List
+
+These queries support key insights used in the Bank Churn Analysis project, helping identify at-risk customers, product gaps, and churn patterns.
+
+---
+
+### 1️⃣ Inactive Customers (No activity in 90 days)
+```sql
+SELECT customer_id, MAX(transaction_date) AS last_txn_date
+FROM transactions
+GROUP BY customer_id
+HAVING CURRENT_DATE - MAX(transaction_date) > 90;
+```
+
+---
+
+### 2️⃣ Customers Without Credit Card
+```sql
+SELECT customer_id
+FROM accounts
+GROUP BY customer_id
+HAVING SUM(CASE WHEN account_type = 'Credit Card' THEN 1 ELSE 0 END) = 0;
+```
+
+---
+
+### 3️⃣ Churn Rate by Age Group
+```sql
+SELECT 
+  CASE 
+    WHEN age < 25 THEN 'Under 25'
+    WHEN age <= 40 THEN '25-40'
+    WHEN age <= 60 THEN '41-60'
+    ELSE '60+' 
+  END AS age_group,
+  ROUND(100.0 * AVG(churn_flag), 2) AS churn_rate
+FROM customers
+GROUP BY age_group;
+```
+
+---
+
+### 4️⃣ Product Adoption vs Churn
+```sql
+SELECT 
+  num_products,
+  COUNT(*) AS customers,
+  ROUND(100.0 * AVG(churn_flag), 2) AS churn_rate
+FROM (
+  SELECT customer_id, COUNT(DISTINCT account_type) AS num_products
+  FROM accounts
+  GROUP BY customer_id
+) AS prod
+JOIN customers USING (customer_id)
+GROUP BY num_products;
+```
+
+---
+
+### 5️⃣ Churn Rate by Region
+```sql
+SELECT 
+  region,
+  COUNT(*) AS total_customers,
+  ROUND(100.0 * AVG(churn_flag), 2) AS churn_rate
+FROM customers
+GROUP BY region
+ORDER BY churn_rate DESC;
+```
+
+---
+
+### 6️⃣ High-Risk Customers (Churn-Prone)
+```sql
+SELECT customer_id, credit_score, balance, tenure
+FROM customers
+WHERE churn_flag = 1
+   OR (credit_score < 600 AND balance < 5000 AND tenure < 2);
